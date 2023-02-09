@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PaymentController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,4 +23,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/', function () {
         return view('home');
     });
+
+    // Route::get('/', [HomeController::class, 'index']);
+    Route::post('pay', [PaymentController::class, 'pay'])->name('payment');
+    Route::get('success', [PaymentController::class, 'success']);
+    Route::get('error', [PaymentController::class, 'error']);
 });
