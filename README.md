@@ -10,6 +10,8 @@
 
 4. run `php artisan migrate`
 
-5. run `php artisan key:generate`
+5. run `composer require omnipay/omnipay`
 
-6. Finally to run the project, run `php artisan serve`
+6. run `php artisan key:generate`
+
+7. Finally to run the project, run `php artisan serve`
