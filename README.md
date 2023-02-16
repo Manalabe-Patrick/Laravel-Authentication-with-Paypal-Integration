@@ -10,7 +10,7 @@
 
 4. run `php artisan migrate`
 
-5. run `composer require omnipay/omnipay`
+5. run `composer require league/omnipay omnipay/paypal`
 
 6. run `php artisan key:generate`
 
