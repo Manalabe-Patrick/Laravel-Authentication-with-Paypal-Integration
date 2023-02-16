@@ -20,6 +20,9 @@ use App\Http\Controllers\PaymentController;
 Auth::routes();
 
 Route::middleware(['auth'])->group(function () {
+    Route::get('/home', function () {
+        return view('auth/login');
+    });
     Route::get('/', function () {
         return view('home');
     });
